@@ -12,7 +12,7 @@ body{background-image: linear-gradient(left, #c02a2a, #470404);}
 
 /* adiciona uma borda às imagens */
 img {
-  border: 1px solid #ddd;
+  border: 1px solid #b16003;
   border-radius: 4px;
   padding: 5px;
 }
