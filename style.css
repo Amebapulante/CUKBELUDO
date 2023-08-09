@@ -16,3 +16,36 @@ img {
   border-radius: 4px;
   padding: 5px;
 }
+
+.carousel {
+  display: block;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+
+.carousel img.active {
+  display: block;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
