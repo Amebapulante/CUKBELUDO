@@ -25,40 +25,41 @@
                 
             </div>
         </div>
+
+        <title>Carousel Example</title>
+      </head>
+      <body>
+      <div class="carousel">
+        <img class="active" src="image1.jpg" alt="Image 1">
+        <img src="image2.jpg" alt="Image 2">
+        <img src="image3.jpg" alt="Image 3">
+      </div>
+      <div class="carousel-btn prev" onclick="changeSlide(-1)">&#10094;</div>
+      <div class="carousel-btn next" onclick="changeSlide(1)">&#10095;</div>
+      
+      <script>
+        let slideIndex = 1;
+        showSlide(slideIndex);
+      
+        function changeSlide(n) {
+          showSlide(slideIndex += n);
+        }
+      
+        function showSlide(n) {
+          let slides = document.querySelectorAll('.carousel img');
+          if (n > slides.length) {
+            slideIndex = 1;
+          }
+          if (n < 1) {
+            slideIndex = slides.length;
+          }
+          for (let i = 0; i < slides.length; i++) {
+            slides[i].classList.remove('active');
+          }
+          slides[slideIndex - 1].classList.add('active');
+        }
+
     </header>
-
-    <title>Carousel Example</title>
-</head>
-<body>
-<div class="carousel">
-  <img class="active" src="image1.jpg" alt="Image 1">
-  <img src="image2.jpg" alt="Image 2">
-  <img src="image3.jpg" alt="Image 3">
-</div>
-<div class="carousel-btn prev" onclick="changeSlide(-1)">&#10094;</div>
-<div class="carousel-btn next" onclick="changeSlide(1)">&#10095;</div>
-
-<script>
-  let slideIndex = 1;
-  showSlide(slideIndex);
-
-  function changeSlide(n) {
-    showSlide(slideIndex += n);
-  }
-
-  function showSlide(n) {
-    let slides = document.querySelectorAll('.carousel img');
-    if (n > slides.length) {
-      slideIndex = 1;
-    }
-    if (n < 1) {
-      slideIndex = slides.length;
-    }
-    for (let i = 0; i < slides.length; i++) {
-      slides[i].classList.remove('active');
-    }
-    slides[slideIndex - 1].classList.add('active');
-  }
 
     <h1><p id="Viagens-Maravilhosas">Viagens Maravilhosas:</p></h1>
 
