@@ -1,5 +1,6 @@
-body{background-image: linear-gradient(left, #c02a2a, #470404);}
-/* cria uma linha flexível para alinhar as imagens horizontalmente */
+   body {
+      background: radial-gradient(circle, #2ecc71, #f39c12); /* Substitua as cores pelo seu degradê desejado */
+    }
 .row {
   display: flex;
 }
