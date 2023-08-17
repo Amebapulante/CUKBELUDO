@@ -1,4 +1,4 @@
-body{background-image: linear-gradient(left, #c02a2a, #470404);}
+body{background-color: #f2f2f2;}
 /* cria uma linha flexível para alinhar as imagens horizontalmente */
 .row {
   display: flex;
